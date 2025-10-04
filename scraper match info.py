@@ -8,7 +8,7 @@ from datetime import datetime   # to convert the date extracted from the header 
 # FBref URL has to be swapped to correct link for each match
 url = "https://fbref.com/en/matches/a7e96019/Werder-Bremen-Freiburg-September-20-2025-Bundesliga"
 
-# --- Cloudflare-aware request ---
+# Cloudflare-aware request 
 scraper = cloudscraper.create_scraper() # creates a fake browser session to bypass cloudflare check
 response = scraper.get(url) # downlaods the HTML of match page
 soup = BeautifulSoup(response.text, "html.parser") # turns HTML string into structured object to be searched
@@ -61,3 +61,4 @@ values ('{matchdate}', '{esc(opponent)}', '{homeaway}', '{competition}', '{score
 """
 print("Match insert query:")
 print(query_match)
+
