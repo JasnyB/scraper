@@ -3,6 +3,7 @@ This repository contains two Python-based scrapes that automatically collect and
 and visualize match data from my favourite football club.💚🤍
 
 --- Match Info Scraper ---
+
 Collects match information like:
 - Fixture dates
 - opponents
@@ -10,6 +11,7 @@ Collects match information like:
 - Results
 
 --- Player Stats Scraper ---
+
 Fetches player-related data such as:
 - Minutes played
 - Goals
@@ -18,6 +20,7 @@ Fetches player-related data such as:
 - Yellow/Red Cards
 
 --- Tech Stack ---
+
 - Python: for scraping and data handling
 - BeautifulSoup / Request: for parsind and fetching data
 - SQL: for structured storage and analysis
